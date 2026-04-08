@@ -157,7 +157,7 @@ device = {
 def menu_apikey():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "→".join(uuid)
-  server = requests.get('https://github.com/thanzaw15/rain/blob/main/rainnight.txt').text
+  server = requests.get('https://github.com/thanzaw15/rain/blob/main/free.txt').text
   
   
   os.system(" clear")                          
@@ -189,7 +189,7 @@ def menu_apikey():
   print(f"\033[1;31m   COPY YOUR KEY AND SEND TO ADMIN  ");time.sleep(0.1)
   print(f"")
   try:
-    httpCaht = requests.get("https://github.com/thanzaw15/rain/blob/main/rainnight.txt").text
+    httpCaht = requests.get("https://github.com/thanzaw15/rain/blob/main/free.txt").text
     if id in httpCaht:
       print("\033[1;92m   YOUR KEY APROVED   ");time.sleep(2)
       msg = str(os.geteuid())
